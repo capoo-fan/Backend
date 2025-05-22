@@ -1,0 +1,17 @@
+{
+  "name": "github-stars-cli",
+  "version": "1.0.0",
+  "description": "A CLI application to fetch the most starred GitHub projects within a specified date range.",
+  "main": "github-stars.js",
+  "scripts": {
+    "start": "node github-stars.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "bin": {
+    "github-stars": "./github-stars.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
