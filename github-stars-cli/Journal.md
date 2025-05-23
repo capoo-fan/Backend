@@ -1,5 +1,12 @@
 # github 查询星标学习笔记
 
+``` javascript
+ const url = `${GITHUB_API_URL}?q=${encodeURIComponent(
+    query
+  )}&sort=stars&order=desc`;
+```
+sort是按照星标数排序，order是升序还是降序
+
 - axios 库 axios.get 获取网站的输出
 
 ```javascript
@@ -34,3 +41,4 @@ responsea 将会返回.json 格式，下面是大致结构 .data 变化为 javas
   * 索引 1: 正在执行的 JavaScript 文件的路径
   * 索引 2 及以后: 用户通过命令行传入的参数
 然后用slice函数切割，如果没有输入 args将为空，||将给一个默认输入。
+
