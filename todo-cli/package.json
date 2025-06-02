@@ -1,0 +1,24 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "一个简单的命令行待办事项管理工具",
+  "main": "todo.js",
+  "bin": {
+    "todo": "./todo.js"
+  },
+  "scripts": {
+    "start": "node todo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "todo",
+    "task-management",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  }
+}
