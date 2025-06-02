@@ -15,7 +15,6 @@ function initDatabase() {
         return;
       }
     });
-
     db.run(
       `
             CREATE TABLE IF NOT EXISTS todos (
