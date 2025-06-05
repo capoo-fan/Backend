@@ -1,5 +1,29 @@
 # 待办清单的开发知识点
 
+- [待办清单的开发知识点](#待办清单的开发知识点)
+  - [创建数据库](#创建数据库)
+  - [添加待办事项的函数](#添加待办事项的函数)
+    - [promise 的使用](#promise-的使用)
+      - [使用模式](#使用模式)
+      - [调用者接收 resolve 的值](#调用者接收-resolve-的值)
+  - [this.lastID 详解](#thislastid-详解)
+    - [this 的指向](#this-的指向)
+      - [lastID 的含义](#lastid-的含义)
+      - [Statement 对象的其他属性](#statement-对象的其他属性)
+      - [实际应用](#实际应用)
+    - [listTodos() 函数详解](#listtodos-函数详解)
+      - [字符串拼接构建 WHERE 条件](#字符串拼接构建-where-条件)
+    - [参数化查询的优势](#参数化查询的优势)
+    - [不同过滤条件生成的 SQL](#不同过滤条件生成的-sql)
+    - [db.all() 函数的参数处理](#dball-函数的参数处理)
+      - [参数接收和解析](#参数接收和解析)
+      - [SQLite 内部处理流程](#sqlite-内部处理流程)
+  - [标记完成待办事项的函数](#标记完成待办事项的函数)
+    - [UPDATE 操作的 SQL 语句](#update-操作的-sql-语句)
+      - [this.changes 的作用](#thischanges-的作用)
+
+
+## 创建数据库
 - sqlite3 数据库的使用
 - _initDatabase_ 创建数据库
   - return new promise 异步操作
